@@ -13,7 +13,7 @@ const useCounter = (operator) => {
       }, 1000);
   
       return () => clearInterval(interval);
-    }, []);
+    }, [operator]);
 
     return counter;
 }
